@@ -29,13 +29,15 @@
             </div>
         </div>
         <div class="main_container">
-            <?php
-            if (isset($main_data)) {
-                $this->load->view("main_body", $main_data);
-            } else {
-                $this->load->view("main_body");
-            }
-            ?>
+            <div class="wrapper">
+                <?php
+                if (isset($main_data)) {
+                    $this->load->view("main_body", $main_data);
+                } else {
+                    $this->load->view("main_body");
+                }
+                ?>
+            </div>
         </div>
         <div class="footer">
             <?php
