@@ -1,0 +1,57 @@
+body{
+    color: #686969;
+}
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato/Lato-Light.ttf);
+}
+
+.clear_float {
+    clear: both;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 10px;
+}
+
+.header #main_logo {
+    width: 250px;
+    float: left;
+}
+
+.header .navigation {
+    float: right;
+}
+
+.header .navigation li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.header .navigation li a {
+    display: block;
+    color: #686969;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.header .navigation li a.active,
+.header .navigation li a:hover {
+    color: #FD2796;
+    font-weight: bold;
+}
+
+.footer {
+    background: #868686;
+}
