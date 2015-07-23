@@ -6,7 +6,13 @@
         <?= link_tag("assets/css/reset.css") ?>
         <?= link_tag("assets/css/main.css") ?>
         <?php if (isset($head_data)) { ?>
-
+            <?php
+            if (isset($head_data['links'])) {
+                foreach ($head_data['links'] as $link) {
+                    echo $link;
+                }
+            }
+            ?>
         <?php } ?>
     </head>
     <body>

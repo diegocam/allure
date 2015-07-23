@@ -57,14 +57,18 @@ body {
     padding: 10px;
     color:black;
     float:left;
+    width:30%;
+    box-sizing: border-box;
 }
 
 .sidebar h1 {
     font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .sidebar ul {
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .sidebar li {
@@ -75,7 +79,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
@@ -93,4 +97,8 @@ body {
 }
 .center_images{
 float:right;
+    width: 70%;
+}
+.center_images img{
+    width: 100%;
 }
