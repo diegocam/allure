@@ -1,9 +1,11 @@
-body{
-    color: #686969;
-}
 @font-face {
     font-family: Lato;
     src: url(../fonts/Lato/Lato-Light.ttf);
+}
+
+body {
+    color: #686969;
+    font-family: 'Lato', sans-serif;
 }
 
 .clear_float {
@@ -17,6 +19,7 @@ body{
 
 .header {
     padding: 10px;
+    border-bottom: 1px solid #ccc;
 }
 
 .header #main_logo {
@@ -38,7 +41,6 @@ body{
     color: #686969;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "Lato", sans-serif;
     -webkit-transition: all 0.1s ease;
     -moz-transition: all 0.1s ease;
     -o-transition: all 0.1s ease;
@@ -51,6 +53,44 @@ body{
     font-weight: bold;
 }
 
-.footer {
-    background: #868686;
+.sidebar {
+    padding: 10px;
+    color:black;
+    float:left;
+}
+
+.sidebar h1 {
+    font-size: 35px;
+}
+
+.sidebar ul {
+    margin-left: 15px;
+}
+
+.sidebar li {
+    padding: 10px 0;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+.sidebar li a:hover {
+    color: #FD2796;
+}
+
+.sidebar li a span {
+    font-weight: normal;
+    font-size: 16px;
+}
+.center_images{
+float:right;
 }
