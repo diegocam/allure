@@ -1,10 +1,10 @@
 <html>
     <head>
         <title>Allure</title>
-        <script src="<?= base_url() ?>assets/js/jquery-1.11.2.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <script src="<?= base_url() ?>assets/js/jquery-2.1.4.min.js"></script>
         <script src="<?= base_url() ?>assets/js/lazyload.js"></script>
         <?= link_tag("assets/css/reset.css") ?>
-        <?= link_tag("assets/css/main.css") ?>
         <?php if (isset($head_data)) { ?>
             <?php
             if (isset($head_data['links'])) {
@@ -14,6 +14,7 @@
             }
             ?>
         <?php } ?>
+        <?= link_tag("assets/css/main.css") ?>
     </head>
     <body>
         <!--<img class="lazy" data-original="<?= base_url() ?>assets/img/videos/alaska.jpg" width="640" height="480">-->
@@ -38,9 +39,9 @@
             <div class="wrapper">
                 <?php
                 if (isset($main_data)) {
-                    $this->load->view("main_body", $main_data);
+                    $this->load->view($body_view, $main_data);
                 } else {
-                    $this->load->view("main_body");
+                    $this->load->view($body_view);
                 }
                 ?>
             </div>

@@ -53,52 +53,31 @@ body {
     font-weight: bold;
 }
 
-.sidebar {
-    padding: 10px;
-    color:black;
-    float:left;
-    width:30%;
-    box-sizing: border-box;
-}
-
-.sidebar h1 {
-    font-size: 35px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.sidebar ul {
-    margin-left: 30px;
-}
-
-.sidebar li {
-    padding: 10px 0;
-}
-
-.sidebar li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    -webkit-transition: all 0.1s ease;
-    -moz-transition: all 0.1s ease;
-    -o-transition: all 0.1s ease;
-    transition: all 0.1s ease;
-}
-
-.sidebar li a:hover {
-    color: #FD2796;
-}
-
-.sidebar li a span {
-    font-weight: normal;
-    font-size: 16px;
-}
-.center_images{
-float:right;
-    width: 70%;
-}
-.center_images img{
+.swiper-container {
     width: 100%;
+    height: auto;
+}
+
+.swiper-wrapper {
+    height: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: auto;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
